@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="382.0" layoutY="290.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="titleLabel" layoutX="182.0" layoutY="24.0" prefHeight="39.0" prefWidth="220.0" text="衣服團購系統">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="35.0" />
+         </font>
+      </Label>
+      <ScrollBar layoutX="561.0" layoutY="4.0" orientation="VERTICAL" prefHeight="479.0" prefWidth="14.0" />
+      <TextField layoutX="100.0" layoutY="96.0" prefHeight="27.0" prefWidth="382.0" />
+      <Label layoutX="100.0" layoutY="141.0" text="分類">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="gentlemanHyperlink" layoutX="316.0" layoutY="137.0" text="男裝">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="ladyHyperlink" layoutX="382.0" layoutY="137.0" text="女裝">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="childHyperlink" layoutX="444.0" layoutY="137.0" text="童裝">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Button layoutX="89.0" layoutY="190.0" mnemonicParsing="false" prefHeight="169.0" prefWidth="413.0" />
+      <ImageView fx:id="imageView" fitHeight="169.0" fitWidth="200.0" layoutX="88.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" >
+      	<image>
+      		<Image url="@../image/swimwear.jpg"></Image>
+      	</image>
+      </ImageView>
+      <Label fx:id="labelTitle" layoutX="295.0" layoutY="212.0" text="標題：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUnitPrice" layoutX="295.0" layoutY="245.0" text="單價：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelQuantitiy" layoutX="295.0" layoutY="275.0" text="數量門檻：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEndTime" layoutX="295.0" layoutY="309.0" text="結束時間：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="212.0" text="泳裝">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="344.0" layoutY="245.0" text="\$15">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="275.0" text="20">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="370.0" layoutY="309.0" text="2021/12/31 19:00">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchButton" layoutX="456.0" layoutY="97.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="25.0" />
+      <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="456.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" >
+      	<image>
+      		<Image url="@../image/searchIcon.png"></Image>
+      	</image>
+      </ImageView>
+      <Hyperlink fx:id="gentlemanHyperlink1" layoutX="491.0" layoutY="11.0" prefHeight="27.0" prefWidth="70.0" text="我的帳戶">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="gentlemanHyperlink11" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="70.0" text="建立團購">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
