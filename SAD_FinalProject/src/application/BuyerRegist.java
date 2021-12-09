@@ -1,5 +1,5 @@
 package application;
 
-public class LoginPanel {
+public class BuyerRegist {
 
 }

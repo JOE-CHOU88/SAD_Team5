@@ -1,6 +1,7 @@
 package application;
 
 	
+//import javax.swing.JFrame;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -28,7 +29,7 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
-		JFrame frame = new JFrame("衣服團購系統");
+		JFrame frame = new JFrame("銵����頃蝟餌絞");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setBounds(100, 100, 500, 600);
 		/*
