@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.351010101010101" layoutY="-1.0" orientation="VERTICAL" prefHeight="504.0" prefWidth="582.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="237.0" prefWidth="276.0">
+               <children>
+                  <Hyperlink layoutX="528.0" layoutY="14.0" text="回首頁" textFill="#aea6a6" />
+                  <Label layoutX="23.0" layoutY="142.0" text="親愛的     ，您好：" />
+                  <Label alignment="TOP_CENTER" layoutX="212.0" layoutY="37.0" text="會員中心">
+                     <font>
+                        <Font size="39.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="123.0" fitWidth="120.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/initiator.jpeg" />
+                     </image></ImageView>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="235.0" prefWidth="580.0">
+               <children>
+                  <TabPane prefHeight="322.0" prefWidth="580.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="                                       個人資訊                                            ">
+                           <content>
+                              <TextArea prefHeight="291.0" prefWidth="412.0" text="&#10;          帳號：&#10;&#10;          密碼：&#10;&#10;          E-mail：&#10;&#10;          帳戶餘額：&#10;&#10;" />
+                           </content>
+                        </Tab>
+                      <Tab text="                                 發起團購紀錄                              ">
+                           <content>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="291.0" prefWidth="582.0" text="您尚未發起任何團購" textAlignment="CENTER" />
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <ScrollBar layoutX="583.0" orientation="VERTICAL" prefHeight="503.0" prefWidth="16.0" />
+   </children>
+</Pane>
