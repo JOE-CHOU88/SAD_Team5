@@ -7,12 +7,12 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="650.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane prefHeight="650.0" prefWidth="422.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
    <children>
       <Pane prefHeight="650.0" prefWidth="482.0" AnchorPane.topAnchor="0.0">
          <children>
-            <TextField layoutX="191.0" layoutY="190.0" prefHeight="27.0" prefWidth="186.0" />
-            <TextField layoutX="191.0" layoutY="242.0" prefHeight="27.0" prefWidth="186.0" />
+            <TextField fx:id="accountField" layoutX="191.0" layoutY="190.0" prefHeight="27.0" prefWidth="186.0" />
+            <TextField fx:id="passwardField" layoutX="191.0" layoutY="242.0" prefHeight="27.0" prefWidth="186.0" />
             <Label layoutX="105.0" layoutY="190.0" prefHeight="28.0" prefWidth="66.0" text="帳號 :">
                <font>
                   <Font size="21.0" />
@@ -28,21 +28,22 @@
                   <Font size="31.0" />
                </font>
             </Label>
-            <Button layoutX="184.0" layoutY="346.0" mnemonicParsing="false" onAction="#switchtoBuyerRegister" prefHeight="34.0" prefWidth="115.0" text="購買人註冊">
+            <Button layoutX="184.0" layoutY="381.0" mnemonicParsing="false" onAction="#switchtoBuyerRegister" prefHeight="34.0" prefWidth="115.0" text="購買人註冊">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="184.0" layoutY="300.0" mnemonicParsing="false" onAction="#switchtoMainPagePanel" prefHeight="34.0" prefWidth="115.0" text="登入">
+            <Button layoutX="184.0" layoutY="335.0" mnemonicParsing="false" onAction="#switchtoMainPagePanel" prefHeight="34.0" prefWidth="115.0" text="登入">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
-            <Button layoutX="184.0" layoutY="390.0" mnemonicParsing="false" onAction="#switchtoFounderRegister" prefHeight="34.0" prefWidth="115.0" text="發起人註冊">
+            <Button layoutX="184.0" layoutY="425.0" mnemonicParsing="false" onAction="#switchtoInitiatorRegister" prefHeight="34.0" prefWidth="115.0" text="發起人註冊">
                <font>
                   <Font size="17.0" />
                </font>
             </Button>
+            <Label fx:id="warningLabel" layoutX="128.0" layoutY="299.0" />
          </children>
       </Pane>
    </children>

@@ -25,20 +25,7 @@ public class Controller {
 		stage.setScene(scene);
 		stage.show();
 	}
-	public void  switchtoBuyerRegister(ActionEvent event) throws Exception{
-		root = FXMLLoader.load(getClass().getResource("BuyerRegister.fxml"));
-		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
-		scene=new Scene(root);
-		stage.setScene(scene);
-		stage.show();
-	}
-	public void  switchtoFounderRegister(ActionEvent event) throws Exception{
-		root = FXMLLoader.load(getClass().getResource("FounderRegister.fxml"));
-		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
-		scene=new Scene(root);
-		stage.setScene(scene);
-		stage.show();
-	}
+	
 	public void  switchtoMainPagePanel(ActionEvent event) throws Exception{
 		root = FXMLLoader.load(getClass().getResource("MainPagePanel.fxml"));
 		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
