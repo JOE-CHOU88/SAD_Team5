@@ -17,7 +17,11 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			// BorderPane root = new BorderPane();
-			Parent root = FXMLLoader.load(getClass().getResource("MainPagePanel.fxml"));
+			//Parent root = FXMLLoader.load(getClass().getResource("MainPagePanel.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
+			//Parent root = FXMLLoader.load(getClass().getResource("InitiatorAccountPanel.fxml"));
+			//Parent root = FXMLLoader.load(getClass().getResource("FounderRegister.fxml"));
+			//Parent root = FXMLLoader.load(getClass().getResource("BuyerRegister.fxml"));
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
@@ -29,6 +33,8 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
+		
+		// window builder 開啟的程式碼
 		JFrame frame = new JFrame("銵����頃蝟餌絞");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setBounds(100, 100, 500, 600);
