@@ -33,13 +33,7 @@ public class Controller {
 		stage.setScene(scene);
 		stage.show();
 	}
-	public void  switchtoInitiatorAccountPanel(ActionEvent event) throws Exception{
-		root = FXMLLoader.load(getClass().getResource("InitiatorAccountPanel.fxml"));
-		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
-		scene=new Scene(root);
-		stage.setScene(scene);
-		stage.show();
-	}
+	
 	//@Override
 	/*public void initialize(URL arg0, ResourceBundle arg1) {
 		// TODO Auto-generated method stub

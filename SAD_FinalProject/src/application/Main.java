@@ -18,6 +18,8 @@ public class Main extends Application {
 		try {
 			// BorderPane root = new BorderPane();
 			//Parent root = FXMLLoader.load(getClass().getResource("MainPagePanel.fxml"));
+			//Parent root = FXMLLoader.load(getClass().getResource("SearchResultPanel.fxml"));
+			//Parent root = FXMLLoader.load(getClass().getResource("ProductDetailPanel.fxml"));
 			Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
 			//Parent root = FXMLLoader.load(getClass().getResource("InitiatorAccountPanel.fxml"));
 			//Parent root = FXMLLoader.load(getClass().getResource("FounderRegister.fxml"));
