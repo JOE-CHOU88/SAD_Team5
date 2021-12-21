@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
 
-public class Controller {
+public class RegisterController {
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
@@ -26,13 +26,6 @@ public class Controller {
 		stage.show();
 	}
 	
-	public void  switchtoMainPagePanel(ActionEvent event) throws Exception{
-		root = FXMLLoader.load(getClass().getResource("MainPagePanel.fxml"));
-		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
-		scene=new Scene(root);
-		stage.setScene(scene);
-		stage.show();
-	}
 	
 	//@Override
 	/*public void initialize(URL arg0, ResourceBundle arg1) {

@@ -43,7 +43,7 @@
                   <Font size="17.0" />
                </font>
             </Button>
-            <Label fx:id="warningLabel" layoutX="128.0" layoutY="299.0" />
+            <Label fx:id="warningLabel" layoutX="180.0" layoutY="299.0" />
          </children>
       </Pane>
    </children>

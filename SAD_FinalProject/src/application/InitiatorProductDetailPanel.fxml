@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProductDetailController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InitiatorProductDetailController">
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="118.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
       <Pane layoutX="29.0" layoutY="184.0" prefHeight="286.0" prefWidth="377.0">
@@ -78,7 +78,7 @@
          <font>
             <Font name="Microsoft JhengHei Bold" size="12.0" />
          </font></Button>
-      <Hyperlink fx:id="gentlemanHyperlink1" layoutX="350.0" layoutY="14.0" onAction="#switchtoMainPagePanel" prefHeight="27.0" prefWidth="70.0" text="回上一頁">
+      <Hyperlink fx:id="gentlemanHyperlink1" layoutX="350.0" layoutY="14.0" onAction="#switchtoInitiatorMainPagePanel" prefHeight="27.0" prefWidth="70.0" text="回上一頁">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>

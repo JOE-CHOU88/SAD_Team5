@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="520.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InitiatorSearchResultPanelController">
+   <children>
+      <Label layoutX="137.0" layoutY="14.0" prefHeight="65.0" prefWidth="227.0" text="衣服團購系統">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="117.0" prefHeight="50.0" prefWidth="148.0" text="搜尋結果如下:">
+         <font>
+            <Font name="Microsoft JhengHei" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="46.0" layoutY="167.0" prefHeight="166.0" prefWidth="385.0">
+         <children>
+            <Button layoutY="-4.0" mnemonicParsing="false" onAction="#switchtoProductDetailPanel" prefHeight="174.0" prefWidth="385.0" />
+            <ImageView fitHeight="166.0" fitWidth="185.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="193.0" layoutY="21.0" prefHeight="23.0" prefWidth="40.0" text="標題:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="54.0" prefHeight="23.0" prefWidth="40.0" text="單價:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="87.0" prefHeight="23.0" prefWidth="74.0" text="數量門檻:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="194.0" layoutY="120.0" prefHeight="23.0" prefWidth="74.0" text="結束時間:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="25.0" />
+            <Label layoutX="230.0" layoutY="58.0" />
+            <Label layoutX="260.0" layoutY="91.0" />
+            <Label layoutX="260.0" layoutY="124.0" />
+         </children>
+      </Pane>
+      <TextField layoutX="50.0" layoutY="90.0" prefHeight="27.0" prefWidth="356.0" />
+      <Button fx:id="searchButton" layoutX="406.0" layoutY="90.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="25.0">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/searchIcon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ScrollBar layoutX="486.0" layoutY="7.0" orientation="VERTICAL" prefHeight="506.0" prefWidth="14.0" />
+      <Hyperlink layoutX="419.0" layoutY="1.0" onAction="#switchtoInitiatorAccountPanel" text="我的帳戶">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Pane layoutX="46.0" layoutY="347.0" prefHeight="166.0" prefWidth="385.0">
+         <children>
+            <Button layoutY="-4.0" mnemonicParsing="false" onAction="#switchtoProductDetailPanel" prefHeight="174.0" prefWidth="385.0" />
+            <ImageView fitHeight="166.0" fitWidth="185.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="193.0" layoutY="21.0" prefHeight="23.0" prefWidth="40.0" text="標題:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="54.0" prefHeight="23.0" prefWidth="40.0" text="單價:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="193.0" layoutY="87.0" prefHeight="23.0" prefWidth="74.0" text="數量門檻:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="194.0" layoutY="120.0" prefHeight="23.0" prefWidth="74.0" text="結束時間:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="233.0" layoutY="25.0" />
+            <Label layoutX="230.0" layoutY="58.0" />
+            <Label layoutX="260.0" layoutY="91.0" />
+            <Label layoutX="260.0" layoutY="124.0" />
+         </children>
+      </Pane>
+      <Hyperlink layoutX="14.0" layoutY="28.0" onAction="#switchtoInitiatorMainPagePanel" text="上一頁">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="7.0" layoutY="1.0" onAction="#switchtoInitiatePanel" text="建立團購">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

@@ -53,19 +53,19 @@ public class LoginController {
 		String initiatorPassward = initiatorScanner.next();
 		
 		if(accountField.getText().equals(buyerAccount) && passwardField.getText().equals(buyerPassward)) {
-			root = FXMLLoader.load(getClass().getResource("MainPagePanel.fxml"));
+			root = FXMLLoader.load(getClass().getResource("BuyerMainPagePanel.fxml"));
 			stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
 			scene=new Scene(root);
 			stage.setScene(scene);
 			stage.show();
 		}else if(accountField.getText().equals(initiatorAccount) && passwardField.getText().equals(initiatorPassward)) {
-			root = FXMLLoader.load(getClass().getResource("MainPagePanel.fxml"));
+			root = FXMLLoader.load(getClass().getResource("InitiatorMainPagePanel.fxml"));
 			stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
 			scene=new Scene(root);
 			stage.setScene(scene);
 			stage.show();
 		}else {
-			warningLabel.setText("Login failure. You haven't regiter before!");
+			warningLabel.setText("登入失敗。您尚未註冊!");
 		}
 		buyerScanner.close();
 		initiatorScanner.close();
