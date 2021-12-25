@@ -23,7 +23,7 @@
                   <Label layoutX="23.0" layoutY="142.0" text="親愛的     ，您好：" />
                   <Label alignment="TOP_CENTER" layoutX="212.0" layoutY="37.0" text="會員中心">
                      <font>
-                        <Font size="39.0" />
+                        <Font name="System Bold" size="39.0" />
                      </font>
                   </Label>
                   <ImageView fitHeight="123.0" fitWidth="120.0" layoutX="25.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
