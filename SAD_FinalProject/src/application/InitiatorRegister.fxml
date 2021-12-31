@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
    <children>
       <Pane prefHeight="650.0" prefWidth="418.0">
          <children>
@@ -47,7 +47,7 @@
                </font>
             </Label>
             <ChoiceBox fx:id="identity" layoutX="160.0" layoutY="328.0" prefHeight="23.0" prefWidth="173.0" />
-            <Button layoutX="120.0" layoutY="374.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="81.0" text="註冊">
+            <Button layoutX="120.0" layoutY="374.0" mnemonicParsing="false" onAction="#switchtoLogin_init" prefHeight="33.0" prefWidth="81.0" text="註冊">
                <font>
                   <Font size="16.0" />
                </font>
@@ -57,6 +57,7 @@
                   <Font size="16.0" />
                </font>
             </Button>
+            <Label fx:id="warningLabel" layoutX="160.0" layoutY="434.0" />
          </children>
       </Pane>
    </children>

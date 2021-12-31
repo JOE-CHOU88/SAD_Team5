@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
    <children>
       <Pane prefHeight="650.0" prefWidth="482.0">
          <children>
@@ -40,7 +40,7 @@
             <TextField layoutX="166.0" layoutY="200.0" prefHeight="32.0" prefWidth="194.0" />
             <TextField layoutX="166.0" layoutY="243.0" prefHeight="32.0" prefWidth="194.0" />
             <TextField layoutX="166.0" layoutY="292.0" prefHeight="32.0" prefWidth="194.0" />
-            <Button layoutX="203.0" layoutY="346.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="121.0" text="註冊">
+            <Button layoutX="203.0" layoutY="346.0" mnemonicParsing="false" onAction="#switchtoLogin_buyer" prefHeight="24.0" prefWidth="121.0" text="註冊">
                <font>
                   <Font size="16.0" />
                </font>
@@ -50,6 +50,7 @@
                   <Font size="16.0" />
                </font>
             </Button>
+            <Label fx:id="warningLabel" layoutX="200.0" layoutY="448.0" prefHeight="15.0" prefWidth="3.0" />
          </children>
       </Pane>
    </children>
