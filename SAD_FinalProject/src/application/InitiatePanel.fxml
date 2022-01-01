@@ -81,7 +81,7 @@
             <Font name="Microsoft JhengHei" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="281.0" layoutY="547.0" mnemonicParsing="false" text="選擇檔案" />
+      <Button layoutX="281.0" layoutY="547.0" mnemonicParsing="false" onAction="#chooseFile" text="選擇檔案" />
       <Label layoutX="361.0" layoutY="557.0" text="未選取檔案" />
       <Button layoutX="252.0" layoutY="590.0" mnemonicParsing="false" onAction="#switchtoInitiatorMainPagePanel" text="建立團購">
          <font>
