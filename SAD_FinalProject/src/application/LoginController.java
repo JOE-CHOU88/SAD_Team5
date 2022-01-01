@@ -42,12 +42,12 @@ public class LoginController {
 	}
 	
 	public void  switchtoMainPagePanel(ActionEvent event) throws Exception{
-		File buyerFile = new File("SAD_FinalProject\\src\\application\\BuyerInfo.txt");
+		File buyerFile = new File("C:\\\\Users\\\\Danny\\\\git\\\\sad\\\\SAD_FinalProject\\\\src\\\\application\\\\BuyerInfo.txt");
 		Scanner buyerScanner = new Scanner(buyerFile);
 		String buyerAccount = buyerScanner.next();
 		String buyerPassward = buyerScanner.next();
 		
-		File initiatorFile = new File("SAD_FinalProject\\src\\application\\InitiatorInfo.txt");
+		File initiatorFile = new File("C:\\\\Users\\\\Danny\\\\git\\\\sad\\\\SAD_FinalProject\\\\src\\\\application\\\\InitiatorInfo.txt");
 		Scanner initiatorScanner = new Scanner(initiatorFile);
 		String initiatorAccount = initiatorScanner.next();
 		String initiatorPassward = initiatorScanner.next();

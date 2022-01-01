@@ -48,7 +48,7 @@ public class InitiatorAccountPanelController implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1){
 		// TODO Auto-generated method stub
-		File file = new File("/Users/ihsuan/git/SAD_Team5-master/SAD_FinalProject/src/application/InitiatorInfo.txt");
+		File file = new File("C:\\\\Users\\\\Danny\\\\git\\\\sad\\\\SAD_FinalProject\\\\src\\\\application\\\\InitiatorInfo.txt");
 		Scanner scanner;
 		int i=1;
 		try {
@@ -87,7 +87,7 @@ public class InitiatorAccountPanelController implements Initializable {
 		}
 	}
 	public void showInfo(String keyword){
-		File file = new File("/Users/ihsuan/git/SAD_Team5-master/SAD_FinalProject/src/application/goodList.txt");
+		File file = new File("C:\\\\Users\\\\Danny\\\\git\\\\sad\\\\SAD_FinalProject\\\\src\\\\application\\\\goodList.txt");
 		Scanner scanner;
 		String result="";
 		String path="";
@@ -117,7 +117,7 @@ public class InitiatorAccountPanelController implements Initializable {
 							break;
 						}
 					}
-					path="/Users/ihsuan/git/SAD_Team5-master/SAD_FinalProject/src/"+path;
+					path="C:\\\\Users\\\\Danny\\\\git\\\\sad\\\\SAD_FinalProject\\\\src\\\\"+path;
 					FileInputStream pic=new FileInputStream(path);
 					Image ig=new Image(pic);
 					ImageView image=new ImageView(ig);
