@@ -59,7 +59,7 @@ public class BuyerAccountPanelController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1){
 		// TODO Auto-generated method stub
-		File file = new File("/Users/ihsuan/git/SAD_Team5-master/SAD_FinalProject/src/application/BuyerInfo.txt");
+		File file = new File("C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\application\\BuyerInfo.txt");
 		Scanner scanner;
 		int i=1;
 		try {
@@ -101,7 +101,7 @@ public class BuyerAccountPanelController implements Initializable{
 			}
 	}
 	public void addGoodListPanel(String info){
-		File file = new File("/Users/ihsuan/git/SAD_Team5-master/SAD_FinalProject/src/application/goodList.txt");
+		File file = new File("");
 		Scanner scanner;
 		String result="";
 		String path="";
@@ -131,7 +131,7 @@ public class BuyerAccountPanelController implements Initializable{
 							break;
 						}
 					}
-					path="/Users/ihsuan/git/SAD_Team5-master/SAD_FinalProject/src/"+path;
+					path="C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\"+path;
 					FileInputStream pic=new FileInputStream(path);
 					Image ig=new Image(pic);
 					ImageView image=new ImageView(ig);
@@ -206,7 +206,7 @@ public class BuyerAccountPanelController implements Initializable{
 	public void updateBalance() {
 		StringBuffer string=new StringBuffer();
 		try {
-			File file = new File("/Users/ihsuan/git/SAD_Team5-master/SAD_FinalProject/src/application/BuyerInfo.txt");
+			File file = new File("C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\application\\BuyerInfo.txt");
 			BufferedReader br= new BufferedReader(new InputStreamReader(new FileInputStream(file),"utf8"));
 			while(br.ready()) {
 				String brString=br.readLine();

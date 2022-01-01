@@ -1,7 +1,9 @@
 package application;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.*;
@@ -9,10 +11,13 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
-public class RegisterController {
+public class InitiatorRegisterController {
 	private Stage stage;
 	private Scene scene;
 	private Parent root;
@@ -31,12 +36,13 @@ public class RegisterController {
 	@FXML
 	private Label warningLabel;
 	@FXML
-	private ChoiceBox identityBox;
+	private ChoiceBox<String> identityBox;
 
 	@FXML
 	private void initialize(){
 		//identityBox.getItems().add("1");
 		identityBox.setItems(identityList);
+		//identityBox.setValue("Choose an identity");
 	}
 	
 	public void  switchtoLogin(ActionEvent event) throws Exception{
@@ -47,56 +53,67 @@ public class RegisterController {
 		stage.show();
 	}
 	
-	public void  switchtoLogin_buyer(ActionEvent event) throws Exception{
-		File buyerFile = new File("\\SAD_FinalProjectsrc\\application\\BuyerInfo.txt");
-		Scanner buyerScanner = new Scanner(buyerFile);
-		String buyerAccount = buyerScanner.next();
-		String buyerPassward = buyerScanner.next();
-		String buyerEmail = buyerScanner.next();
-		
-		if(accountField.getText().equals(buyerAccount)) {
-			warningLabel.setText("帳號已被註冊");
-		}else if(passwardField.getText().equals(checkPasswardField.getText())) {
-			warningLabel.setText("您輸入的兩個密碼並不相符");
-		}else if(accountField.getText().equals(null)||emailField.getText().equals(null)) {
-			warningLabel.setText("請輸入完整的個人資訊");
-		}else if(passwardField.getText().equals(null)||checkPasswardField.getText().equals(null)) {
-			warningLabel.setText("請輸入完整的個人資訊");
-		}else {
-			warningLabel.setText("註冊成功，請返回登入介面");
-		}
-		buyerScanner.close();
-		initiatorScanner.close();
-		/*
-		root = FXMLLoader.load(getClass().getResource("Login.fxml"));
-		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
-		scene=new Scene(root);
-		stage.setScene(scene);
-		stage.show();
-		*/
-	}
 	
 	public void  switchtoLogin_init(ActionEvent event) throws Exception{
+		File buyerFile = new File("C:\\\\Users\\\\Danny\\\\git\\\\sad\\\\SAD_FinalProject\\\\src\\\\application\\\\BuyerInfo.txt");
 		File initFile = new File("\\SAD_FinalProjectsrc\\application\\InitiatorInfo.txt");
 		Scanner initScanner = new Scanner(buyerFile);
-		String initAccount = buyerScanner.next();
-		String initPassward = buyerScanner.next();
-		String initEmail = buyerScanner.next();
-		String initIdentity = buyerScanner.next();
+		String initAccount = initScanner.next();
+		String initPassward = initScanner.next();
+		String initEmail = initScanner.next();
+		String initIdentity = initScanner.next();
 		
+		//Check if user has filled in all the info
+		if(accountField.getText().equals("")) {
+			warningLabel.setText("請輸入帳號");
+			initScanner.close();
+			return;
+		}
+		if(passwardField.getText().equals("")) {
+			warningLabel.setText("請輸入密碼");
+			initScanner.close();
+			return;
+		}
+		if(checkPasswardField.getText().equals("")) {
+			warningLabel.setText("請輸入確認密碼");
+			initScanner.close();
+			return;
+		}
+		if(emailField.getText().equals("")) {
+			warningLabel.setText("請輸入信箱");
+			initScanner.close();
+			return;
+		}
+		if(identityBox.getValue().equals("Choose an identity")) {
+			warningLabel.setText("請選擇身分");
+			initScanner.close();
+			return;
+		}
+		
+		//Other error handling
 		if(accountField.getText().equals(initAccount)) {
 			warningLabel.setText("帳號已被註冊");
-		}else if(passwardField.getText().equals(checkPasswardField.getText())) {
-			warningLabel.setText("您輸入的兩個密碼並不相符");
-		}else if(accountField.getText().equals(null)||emailField.getText().equals(null)) {
-			warningLabel.setText("請輸入完整的個人資訊");
-		}else if(passwardField.getText().equals(null)||checkPasswardField.getText().equals(null)) {
-			warningLabel.setText("請輸入完整的個人資訊");
-		}else {
-			warningLabel.setText("註冊成功，請返回登入介面");
+			initScanner.close();
+			return;
 		}
-		buyerScanner.close();
-		initiatorScanner.close();
+		if(!passwardField.getText().equals(checkPasswardField.getText())) {
+			warningLabel.setText("您輸入的兩個密碼並不相符");
+			initScanner.close();
+			return;
+		}
+		if(accountField.getText().equals(null)||emailField.getText().equals(null)) {
+			warningLabel.setText("請輸入完整的個人資訊");
+			initScanner.close();
+			return;
+		}
+		if(passwardField.getText().equals(null)||checkPasswardField.getText().equals(null)) {
+			warningLabel.setText("請輸入完整的個人資訊");
+			initScanner.close();
+			return;
+		}
+
+		warningLabel.setText("註冊成功，請返回登入介面");
+		initScanner.close();
 	}
 	
 	//@Override

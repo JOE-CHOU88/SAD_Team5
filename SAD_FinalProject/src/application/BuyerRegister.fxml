@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BuyerRegisterController">
    <children>
       <Pane prefHeight="650.0" prefWidth="482.0">
          <children>
@@ -36,10 +36,10 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <TextField layoutX="166.0" layoutY="159.0" prefHeight="32.0" prefWidth="194.0" />
-            <TextField layoutX="166.0" layoutY="200.0" prefHeight="32.0" prefWidth="194.0" />
-            <TextField layoutX="166.0" layoutY="243.0" prefHeight="32.0" prefWidth="194.0" />
-            <TextField layoutX="166.0" layoutY="292.0" prefHeight="32.0" prefWidth="194.0" />
+            <TextField fx:id="accountField" layoutX="166.0" layoutY="159.0" prefHeight="32.0" prefWidth="194.0" />
+            <TextField fx:id="passwardField" layoutX="166.0" layoutY="200.0" prefHeight="32.0" prefWidth="194.0" />
+            <TextField fx:id="checkPasswardField" layoutX="166.0" layoutY="243.0" prefHeight="32.0" prefWidth="194.0" />
+            <TextField fx:id="emailField" layoutX="166.0" layoutY="292.0" prefHeight="32.0" prefWidth="194.0" />
             <Button layoutX="203.0" layoutY="346.0" mnemonicParsing="false" onAction="#switchtoLogin_buyer" prefHeight="24.0" prefWidth="121.0" text="註冊">
                <font>
                   <Font size="16.0" />
@@ -50,7 +50,7 @@
                   <Font size="16.0" />
                </font>
             </Button>
-            <Label fx:id="warningLabel" layoutX="200.0" layoutY="448.0" prefHeight="15.0" prefWidth="3.0" />
+            <Label fx:id="warningLabel" alignment="CENTER" layoutX="51.0" layoutY="448.0" prefHeight="15.0" prefWidth="424.0" />
          </children>
       </Pane>
    </children>
