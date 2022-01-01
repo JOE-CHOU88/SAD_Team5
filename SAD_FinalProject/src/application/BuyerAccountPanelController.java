@@ -59,7 +59,7 @@ public class BuyerAccountPanelController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1){
 		// TODO Auto-generated method stub
-		File file = new File("C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\application\\BuyerInfo.txt");
+		File file = new File("SAD_FinalProject\\\\src\\\\application\\\\BuyerInfo.txt");
 		Scanner scanner;
 		int i=1;
 		try {
@@ -169,7 +169,7 @@ public class BuyerAccountPanelController implements Initializable{
 		}
 	}
 	public void chargeCenter(ActionEvent event)throws Exception{
-		if(chargeField.getText().isBlank()){
+		if(chargeField.getText().isEmpty()){ //isBlank
 			final Alert alert=new Alert(AlertType.ERROR,"請輸入加值金額");
 			alert.setHeaderText("");
 			alert.showAndWait();
