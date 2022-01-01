@@ -6,21 +6,20 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InitiatorAccountPanelController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InitiatorAccountPanelController">
    <children>
       <SplitPane dividerPositions="0.351010101010101" layoutY="-1.0" orientation="VERTICAL" prefHeight="504.0" prefWidth="582.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="237.0" prefWidth="276.0">
                <children>
-                  <Hyperlink layoutX="528.0" layoutY="14.0" onAction="#switchtoInitiatorMainPagePanel" text="回首頁" textFill="#aea6a6" />
-                  <Label layoutX="23.0" layoutY="142.0" text="親愛的     ，您好：" />
+                  <Hyperlink id="back" layoutX="528.0" layoutY="14.0" onAction="#switchtoInitiatorMainPagePanel" text="回首頁" textFill="#aea6a6" />
+                  <Label layoutX="23.0" layoutY="142.0" text="親愛的會員，您好：" />
                   <Label alignment="TOP_CENTER" layoutX="212.0" layoutY="37.0" text="會員中心">
                      <font>
                         <Font name="System Bold" size="39.0" />
@@ -33,20 +32,38 @@
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="235.0" prefWidth="580.0">
                <children>
-                  <TabPane prefHeight="322.0" prefWidth="580.0" tabClosingPolicy="UNAVAILABLE">
-                    <tabs>
-                      <Tab text="                                       個人資訊                                            ">
-                           <content>
-                              <TextArea prefHeight="291.0" prefWidth="412.0" text="&#10;          帳號：&#10;&#10;          密碼：&#10;&#10;          E-mail：&#10;&#10;          帳戶餘額：&#10;&#10;" />
-                           </content>
-                        </Tab>
-                      <Tab text="                                 發起團購紀錄                              ">
-                           <content>
-                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="291.0" prefWidth="582.0" text="您尚未發起任何團購" textAlignment="CENTER" />
-                           </content>
-                        </Tab>
-                    </tabs>
-                  </TabPane>
+                  <Pane prefHeight="322.0" prefWidth="580.0">
+                     <children>
+                        <TabPane prefHeight="322.0" prefWidth="582.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="                                 個人資訊                               ">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="63.0" layoutY="103.0" text="密碼：" />
+                                          <Label layoutX="64.0" layoutY="139.0" text="E-mail：" />
+                                          <Label layoutX="63.0" layoutY="65.0" text="帳號：" />
+                                          <Label layoutX="63.0" layoutY="175.0" text="身份：" />
+                                          <Label fx:id="account" layoutX="103.0" layoutY="65.0" prefHeight="18.0" prefWidth="167.0" />
+                                          <Label fx:id="password" layoutX="103.0" layoutY="104.0" prefHeight="18.0" prefWidth="164.0" />
+                                          <Label fx:id="email" layoutX="115.0" layoutY="140.0" prefHeight="18.0" prefWidth="174.0" />
+                                          <Label fx:id="balance" layoutX="103.0" layoutY="175.0" prefHeight="18.0" prefWidth="148.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab fx:id="recordTab" text="                          發起團購紀錄                         ">
+                              <content>
+                                <AnchorPane id="layout" fx:id="goodList" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label fx:id="goodinfo" contentDisplay="CENTER" layoutX="234.0" layoutY="115.0" prefHeight="18.0" prefWidth="123.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></Pane>
                </children></AnchorPane>
         </items>
       </SplitPane>
