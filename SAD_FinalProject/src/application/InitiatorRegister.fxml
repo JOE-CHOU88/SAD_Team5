@@ -46,7 +46,7 @@
                   <Font size="30.0" />
                </font>
             </Label>
-            <ChoiceBox fx:id="identity" layoutX="160.0" layoutY="328.0" prefHeight="23.0" prefWidth="173.0" />
+            <ChoiceBox fx:id="identityBox" layoutX="160.0" layoutY="328.0" prefHeight="23.0" prefWidth="173.0" />
             <Button layoutX="120.0" layoutY="374.0" mnemonicParsing="false" onAction="#switchtoLogin_init" prefHeight="33.0" prefWidth="81.0" text="註冊">
                <font>
                   <Font size="16.0" />
