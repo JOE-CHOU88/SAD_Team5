@@ -49,7 +49,7 @@
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="labelUnitPrice" layoutX="295.0" layoutY="245.0" text="單價：">
+      <Label fx:id="labelUnitPrice" layoutX="295.0" layoutY="245.0" text="單價： $">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
@@ -64,22 +64,22 @@
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="344.0" layoutY="212.0" text="泳裝">
+      <Label fx:id="title1" layoutX="344.0" layoutY="212.0" prefHeight="19.0" prefWidth="155.0" text="泳裝">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="344.0" layoutY="245.0" text="\$15">
+      <Label fx:id="unitPrice1" layoutX="354.0" layoutY="245.0" prefHeight="19.0" prefWidth="81.0" text="15">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="370.0" layoutY="275.0" text="20">
+      <Label fx:id="quantity1" layoutX="370.0" layoutY="275.0" prefHeight="19.0" prefWidth="70.0" text="20">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="370.0" layoutY="309.0" text="2021/12/31 19:00">
+      <Label fx:id="endTime1" layoutX="370.0" layoutY="309.0" prefHeight="19.0" prefWidth="132.0" text="2021/12/31 19:00">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
@@ -102,6 +102,99 @@
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Hyperlink>
-      <ScrollBar layoutX="561.0" layoutY="4.0" orientation="VERTICAL" prefHeight="479.0" prefWidth="14.0" />
+      <ScrollBar layoutX="561.0" layoutY="4.0" orientation="VERTICAL" prefHeight="722.0" prefWidth="14.0" />
+      <Hyperlink layoutX="18.0" layoutY="41.0" onAction="#switchtoLoginPanel" text="登出" />
+      <Button layoutX="89.0" layoutY="370.0" mnemonicParsing="false" onAction="#switchtoProductDetailPanel" prefHeight="169.0" prefWidth="413.0" />
+      <ImageView fx:id="imageView2" fitHeight="169.0" fitWidth="200.0" layoutX="88.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/swimwear.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTitle1" layoutX="295.0" layoutY="392.0" text="標題：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUnitPrice1" layoutX="295.0" layoutY="425.0" text="單價： $">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelQuantitiy1" layoutX="295.0" layoutY="455.0" text="數量門檻：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEndTime1" layoutX="295.0" layoutY="489.0" text="結束時間：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="title2" layoutX="344.0" layoutY="392.0" prefHeight="19.0" prefWidth="155.0" text="泳裝">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="unitPrice2" layoutX="354.0" layoutY="425.0" prefHeight="19.0" prefWidth="81.0" text="15">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantity2" layoutX="370.0" layoutY="455.0" prefHeight="19.0" prefWidth="70.0" text="20">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="endTime2" layoutX="370.0" layoutY="489.0" prefHeight="19.0" prefWidth="132.0" text="2021/12/31 19:00">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="90.0" layoutY="553.0" mnemonicParsing="false" onAction="#switchtoProductDetailPanel" prefHeight="169.0" prefWidth="413.0" />
+      <ImageView fx:id="imageView2" fitHeight="169.0" fitWidth="200.0" layoutX="89.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/swimwear.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelTitle2" layoutX="296.0" layoutY="575.0" text="標題：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUnitPrice2" layoutX="296.0" layoutY="608.0" text="單價：$">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelQuantitiy2" layoutX="296.0" layoutY="638.0" text="數量門檻：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEndTime2" layoutX="296.0" layoutY="672.0" text="結束時間：">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="title3" layoutX="345.0" layoutY="575.0" prefHeight="19.0" prefWidth="155.0" text="泳裝">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="unitPrice3" layoutX="354.0" layoutY="608.0" prefHeight="19.0" prefWidth="81.0" text="15">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="quantity3" layoutX="371.0" layoutY="638.0" prefHeight="19.0" prefWidth="70.0" text="20">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="endTime3" layoutX="371.0" layoutY="672.0" prefHeight="19.0" prefWidth="132.0" text="2021/12/31 19:00">
+         <font>
+            <Font name="Microsoft JhengHei" size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

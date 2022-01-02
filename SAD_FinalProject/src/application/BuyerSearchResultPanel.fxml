@@ -26,13 +26,16 @@
       <Pane layoutX="46.0" layoutY="167.0" prefHeight="166.0" prefWidth="385.0">
          <children>
             <Button layoutY="-4.0" mnemonicParsing="false" onAction="#switchtoProductDetailPanel" prefHeight="174.0" prefWidth="385.0" />
-            <ImageView fitHeight="166.0" fitWidth="185.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="174.0" fitWidth="176.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/swimwear.jpg" />
+               </image></ImageView>
             <Label layoutX="193.0" layoutY="21.0" prefHeight="23.0" prefWidth="40.0" text="標題:">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="193.0" layoutY="54.0" prefHeight="23.0" prefWidth="40.0" text="單價:">
+            <Label layoutX="193.0" layoutY="54.0" prefHeight="23.0" prefWidth="52.0" text="單價: $">
                <font>
                   <Font size="14.0" />
                </font>
@@ -47,10 +50,10 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="233.0" layoutY="25.0" />
-            <Label layoutX="230.0" layoutY="58.0" />
-            <Label layoutX="260.0" layoutY="91.0" />
-            <Label layoutX="260.0" layoutY="124.0" />
+            <Label fx:id="title" layoutX="233.0" layoutY="25.0" prefHeight="15.0" prefWidth="148.0" text="泳裝" />
+            <Label fx:id="unitPrice" layoutX="238.0" layoutY="58.0" prefHeight="15.0" prefWidth="148.0" text="15" />
+            <Label fx:id="quantity" layoutX="260.0" layoutY="91.0" prefHeight="15.0" prefWidth="120.0" text="20" />
+            <Label fx:id="endTime" layoutX="260.0" layoutY="124.0" prefHeight="15.0" prefWidth="120.0" text="2021/12/31 19:00" />
          </children>
       </Pane>
       <TextField layoutX="50.0" layoutY="90.0" prefHeight="27.0" prefWidth="356.0" />
@@ -69,36 +72,6 @@
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Hyperlink>
-      <Pane layoutX="46.0" layoutY="347.0" prefHeight="166.0" prefWidth="385.0">
-         <children>
-            <Button layoutY="-4.0" mnemonicParsing="false" onAction="#switchtoProductDetailPanel" prefHeight="174.0" prefWidth="385.0" />
-            <ImageView fitHeight="166.0" fitWidth="185.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
-            <Label layoutX="193.0" layoutY="21.0" prefHeight="23.0" prefWidth="40.0" text="標題:">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="193.0" layoutY="54.0" prefHeight="23.0" prefWidth="40.0" text="單價:">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="193.0" layoutY="87.0" prefHeight="23.0" prefWidth="74.0" text="數量門檻:">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="194.0" layoutY="120.0" prefHeight="23.0" prefWidth="74.0" text="結束時間:">
-               <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Label layoutX="233.0" layoutY="25.0" />
-            <Label layoutX="230.0" layoutY="58.0" />
-            <Label layoutX="260.0" layoutY="91.0" />
-            <Label layoutX="260.0" layoutY="124.0" />
-         </children>
-      </Pane>
       <Hyperlink layoutX="13.0" layoutY="1.0" onAction="#switchtoBuyerMainPagePanel" text="上一頁">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
