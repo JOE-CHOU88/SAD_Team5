@@ -55,8 +55,8 @@ public class InitiatorRegisterController {
 	
 	
 	public void  switchtoLogin_init(ActionEvent event) throws Exception{
-		File buyerFile = new File("C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\applicationBuyerInfo.txt");
-		File initFile = new File("C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\application\\InitiatorInfo.txt");
+		File buyerFile = new File("SAD_FinalProject\\src\\application\\InitiatorInfo.txt");
+		File initFile = new File("SAD_FinalProject\\src\\application\\InitiatorInfo.txt");
 		Scanner initScanner = new Scanner(initFile);
 		String initAccount = initScanner.next();
 		String initPassward = initScanner.next();

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BuyerMainPagePanelController">
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BuyerMainPagePanelController">
    <children>
       <Label fx:id="titleLabel" layoutX="182.0" layoutY="24.0" prefHeight="39.0" prefWidth="220.0" text="衣服團購系統">
          <font>
@@ -69,7 +69,7 @@
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="unitPrice1" layoutX="352.0" layoutY="245.0" prefHeight="19.0" prefWidth="134.0" text="15">
+      <Label fx:id="unitPrice1" layoutX="352.0" layoutY="245.0" prefHeight="19.0" prefWidth="134.0" text="449">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
@@ -79,7 +79,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="endTime1" layoutX="370.0" layoutY="309.0" prefHeight="19.0" prefWidth="134.0" text="2021/12/31 19:00">
+      <Label fx:id="endTime1" layoutX="370.0" layoutY="309.0" prefHeight="19.0" prefWidth="134.0" text="2021/12/31 23:59">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
@@ -98,11 +98,14 @@
          </font>
       </Hyperlink>
       <ScrollBar layoutX="561.0" layoutY="4.0" orientation="VERTICAL" prefHeight="728.0" prefWidth="14.0" />
-      <Hyperlink layoutX="14.0" layoutY="14.0" onAction="#switchtoLoginPanel" text="登出" />
+      <Hyperlink layoutX="14.0" layoutY="12.0" onAction="#switchtoLoginPanel" text="登出">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
       <Button layoutX="90.0" layoutY="377.0" mnemonicParsing="false" onAction="#switchtoProductDetailPanel" prefHeight="169.0" prefWidth="413.0" />
       <ImageView fx:id="imageView1" fitHeight="169.0" fitWidth="200.0" layoutX="89.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/swimwear.jpg" />
+            <Image url="@../image/baby.jpg" />
          </image>
       </ImageView>
       <Label fx:id="labelTitle1" layoutX="296.0" layoutY="399.0" text="標題：">
@@ -125,22 +128,22 @@
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="title2" layoutX="345.0" layoutY="399.0" prefHeight="19.0" prefWidth="154.0" text="泳裝">
+      <Label fx:id="title2" layoutX="345.0" layoutY="399.0" prefHeight="19.0" prefWidth="154.0" text="熊寶寶外套">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="unitPrice2" layoutX="352.0" layoutY="432.0" prefHeight="19.0" prefWidth="146.0" text="15">
+      <Label fx:id="unitPrice2" layoutX="352.0" layoutY="432.0" prefHeight="19.0" prefWidth="146.0" text="649">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="quantity2" layoutX="371.0" layoutY="462.0" prefHeight="19.0" prefWidth="127.0" text="20">
+      <Label fx:id="quantity2" layoutX="371.0" layoutY="462.0" prefHeight="19.0" prefWidth="127.0" text="30">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="endTime2" layoutX="371.0" layoutY="496.0" prefHeight="19.0" prefWidth="134.0" text="2021/12/31 19:00">
+      <Label fx:id="endTime2" layoutX="371.0" layoutY="496.0" prefHeight="19.0" prefWidth="134.0" text="2022/01/02 23:59">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
@@ -148,7 +151,7 @@
       <Button layoutX="91.0" layoutY="559.0" mnemonicParsing="false" onAction="#switchtoProductDetailPanel" prefHeight="169.0" prefWidth="413.0" />
       <ImageView fx:id="imageView2" fitHeight="169.0" fitWidth="200.0" layoutX="90.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/swimwear.jpg" />
+            <Image url="@../image/dress.jpg" />
          </image>
       </ImageView>
       <Label fx:id="labelTitle2" layoutX="297.0" layoutY="581.0" text="標題：">
@@ -171,22 +174,22 @@
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="title3" layoutX="346.0" layoutY="581.0" prefHeight="19.0" prefWidth="154.0" text="泳裝">
+      <Label fx:id="title3" layoutX="346.0" layoutY="581.0" prefHeight="19.0" prefWidth="154.0" text="洋裝">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="unitPrice3" layoutX="352.0" layoutY="614.0" prefHeight="19.0" prefWidth="146.0" text="15">
+      <Label fx:id="unitPrice3" layoutX="352.0" layoutY="614.0" prefHeight="19.0" prefWidth="146.0" text="1799">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>
       </Label>
-      <Label fx:id="quantity3" layoutX="372.0" layoutY="644.0" prefHeight="19.0" prefWidth="127.0" text="20">
+      <Label fx:id="quantity3" layoutX="372.0" layoutY="644.0" prefHeight="19.0" prefWidth="127.0" text="10">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="endTime3" layoutX="372.0" layoutY="678.0" prefHeight="19.0" prefWidth="134.0" text="2021/12/31 19:00">
+      <Label fx:id="endTime3" layoutX="372.0" layoutY="678.0" prefHeight="19.0" prefWidth="134.0" text="2022/01/10 23:59">
          <font>
             <Font name="Microsoft JhengHei" size="14.0" />
          </font>

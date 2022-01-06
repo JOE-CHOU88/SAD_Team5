@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BuyerProductDetailController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BuyerProductDetailController">
    <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="118.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
       <Pane layoutX="29.0" layoutY="184.0" prefHeight="286.0" prefWidth="377.0">
@@ -62,16 +62,16 @@
                   <Font name="Microsoft JhengHei" size="14.0" />
                </font>
             </Label>
-            <Label layoutX="62.0" layoutY="10.0" />
-            <Label layoutX="88.0" layoutY="178.0" />
-            <Label layoutX="88.0" layoutY="206.0" />
-            <Label layoutX="131.0" layoutY="234.0" />
-            <Label layoutX="88.0" layoutY="262.0" />
-            <Label layoutX="88.0" layoutY="66.0" />
-            <Label layoutX="62.0" layoutY="94.0" />
-            <Label layoutX="88.0" layoutY="122.0" />
-            <Label layoutX="88.0" layoutY="150.0" />
-            <Label layoutX="62.0" layoutY="38.0" />
+            <Label fx:id="label" layoutX="62.0" layoutY="10.0" />
+            <Label fx:id="takeTime" layoutX="88.0" layoutY="178.0" />
+            <Label fx:id="takePlace" layoutX="88.0" layoutY="206.0" />
+            <Label fx:id="initInfo" layoutX="131.0" layoutY="234.0" />
+            <Label fx:id="goodInfo" layoutX="88.0" layoutY="262.0" />
+            <Label fx:id="num" layoutX="88.0" layoutY="66.0" />
+            <Label fx:id="catagory" layoutX="62.0" layoutY="94.0" />
+            <Label fx:id="startTime" layoutX="88.0" layoutY="122.0" />
+            <Label fx:id="endTime" layoutX="88.0" layoutY="150.0" />
+            <Label fx:id="price" layoutX="62.0" layoutY="38.0" />
          </children>
       </Pane>
       <Button layoutX="113.0" layoutY="481.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="209.0" text="加入團購">

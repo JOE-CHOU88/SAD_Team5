@@ -12,7 +12,7 @@ public class BuyerProductDetailController {
 	private Scene scene;
 	private Parent root;
 	
-	public void  switchtoBuyerMainPagePanel(ActionEvent event) throws Exception{
+	public void switchtoBuyerMainPagePanel(ActionEvent event) throws Exception{
 		root = FXMLLoader.load(getClass().getResource("BuyerMainPagePanel.fxml"));
 		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
 		scene=new Scene(root);

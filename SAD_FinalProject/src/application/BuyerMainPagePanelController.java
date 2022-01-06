@@ -22,7 +22,7 @@ public class BuyerMainPagePanelController {
 	private Scene scene;
 	private Parent root;
 	
-	public void  switchtoBuyerAccountPanel(ActionEvent event) throws Exception{
+	public void switchtoBuyerAccountPanel(ActionEvent event) throws Exception{
 		root = FXMLLoader.load(getClass().getResource("BuyerAccountPanel.fxml"));
 		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
 		scene=new Scene(root);
@@ -30,7 +30,7 @@ public class BuyerMainPagePanelController {
 		stage.show();
 	}
 	
-	public void  switchtoProductDetailPanel(ActionEvent event) throws Exception{
+	public void switchtoProductDetailPanel(ActionEvent event) throws Exception{
 		root = FXMLLoader.load(getClass().getResource("BuyerProductDetailPanel.fxml"));
 		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
 		scene=new Scene(root);
@@ -38,7 +38,7 @@ public class BuyerMainPagePanelController {
 		stage.show();
 	}
 	
-	public void  switchtoBuyerSearchResultPanel(ActionEvent event) throws Exception{
+	public void switchtoBuyerSearchResultPanel(ActionEvent event) throws Exception{
 		root = FXMLLoader.load(getClass().getResource("BuyerSearchResultPanel.fxml"));
 		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
 		scene=new Scene(root);
@@ -46,7 +46,7 @@ public class BuyerMainPagePanelController {
 		stage.show();
 	}
 	
-	public void  switchtoLoginPanel(ActionEvent event) throws Exception{
+	public void switchtoLoginPanel(ActionEvent event) throws Exception{
 		root = FXMLLoader.load(getClass().getResource("Login.fxml"));
 		stage= (Stage) ((Node)event.getSource()).getScene().getWindow();
 		scene=new Scene(root);

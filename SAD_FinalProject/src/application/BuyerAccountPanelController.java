@@ -59,7 +59,7 @@ public class BuyerAccountPanelController implements Initializable{
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1){
 		// TODO Auto-generated method stub
-		File file = new File("C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\application\\BuyerInfo.txt");
+		File file = new File("SAD_FinalProject\\src\\application\\BuyerInfo.txt");
 		Scanner scanner;
 		int i=1;
 		try {
@@ -131,7 +131,7 @@ public class BuyerAccountPanelController implements Initializable{
 							break;
 						}
 					}
-					path="C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\"+path;
+					path="SAD_FinalProject\\src\\"+path;//C:\\Users\\Danny\\git\\sad\\SAD_FinalProject\\src\\
 					FileInputStream pic=new FileInputStream(path);
 					Image ig=new Image(pic);
 					ImageView image=new ImageView(ig);
