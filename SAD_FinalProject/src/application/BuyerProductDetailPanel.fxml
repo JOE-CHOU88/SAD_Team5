@@ -3,13 +3,17 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="434.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BuyerProductDetailController">
    <children>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="118.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="picture" fitHeight="171.0" fitWidth="209.0" layoutX="132.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/swimwear.jpg" />
+         </image></ImageView>
       <Pane layoutX="29.0" layoutY="184.0" prefHeight="286.0" prefWidth="377.0">
          <children>
             <Label layoutX="24.0" layoutY="6.0" prefHeight="23.0" prefWidth="64.0" text="標題:">
@@ -62,16 +66,16 @@
                   <Font name="Microsoft JhengHei" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="label" layoutX="62.0" layoutY="10.0" />
-            <Label fx:id="takeTime" layoutX="88.0" layoutY="178.0" />
-            <Label fx:id="takePlace" layoutX="88.0" layoutY="206.0" />
-            <Label fx:id="initInfo" layoutX="131.0" layoutY="234.0" />
-            <Label fx:id="goodInfo" layoutX="88.0" layoutY="262.0" />
-            <Label fx:id="num" layoutX="88.0" layoutY="66.0" />
-            <Label fx:id="catagory" layoutX="62.0" layoutY="94.0" />
-            <Label fx:id="startTime" layoutX="88.0" layoutY="122.0" />
-            <Label fx:id="endTime" layoutX="88.0" layoutY="150.0" />
-            <Label fx:id="price" layoutX="62.0" layoutY="38.0" />
+            <Label fx:id="Dtitle" layoutX="62.0" layoutY="10.0" prefHeight="17.0" prefWidth="186.0" />
+            <Label fx:id="Dtime" layoutX="88.0" layoutY="178.0" prefHeight="17.0" prefWidth="238.0" />
+            <Label fx:id="Dplace" layoutX="88.0" layoutY="206.0" prefHeight="17.0" prefWidth="238.0" />
+            <Label fx:id="Dinfo" layoutX="131.0" layoutY="234.0" prefHeight="17.0" prefWidth="228.0" />
+            <Label fx:id="Ddescrip" layoutX="88.0" layoutY="262.0" prefHeight="17.0" prefWidth="280.0" />
+            <Label fx:id="Dnum" layoutX="88.0" layoutY="66.0" prefHeight="17.0" prefWidth="268.0" />
+            <Label fx:id="Dtype" layoutX="62.0" layoutY="94.0" prefHeight="17.0" prefWidth="280.0" />
+            <Label fx:id="Dstart" layoutX="88.0" layoutY="122.0" prefHeight="17.0" prefWidth="228.0" />
+            <Label fx:id="Dend" layoutX="88.0" layoutY="150.0" prefHeight="17.0" prefWidth="238.0" />
+            <Label fx:id="Dprice" layoutX="62.0" layoutY="38.0" prefHeight="17.0" prefWidth="293.0" />
          </children>
       </Pane>
       <Button layoutX="113.0" layoutY="481.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="209.0" text="加入團購">
